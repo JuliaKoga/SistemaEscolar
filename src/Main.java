@@ -18,10 +18,10 @@ public class Main {
         Aluno ana = new Aluno("Ana", 15,"00000000-0", endereco3,Classe.A1);
         Visitante carlos = new Visitante("Carlos",38,"00000000-0",endereco3);
         Endereco endereco4 = new Endereco("AAA","AAA",456,"AAA","00000-000",Estado.SP,"São Paulo");
-        materia.clear();
-        materia.add(Materia.FILOSOFIA);
-        materia.add(Materia.SOCIOLOGIA);
-        Professor jose = new Professor("José",43,"00000000-00",endereco4,"jose123@live.com",materia);
+        List<Materia> materia2 = new ArrayList<>();
+        materia2.add(Materia.FILOSOFIA);
+        materia2.add(Materia.SOCIOLOGIA);
+        Professor jose = new Professor("José",43,"00000000-00",endereco4,"jose123@live.com",materia2);
 
         cadastro.cadastra(joao);
         cadastro.cadastra(luana);
