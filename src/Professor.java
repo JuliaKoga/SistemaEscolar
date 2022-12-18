@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Professor extends Pessoa implements Cadastravel {
+
     private String email;
     private List<Materia> materia = new ArrayList<>();
 

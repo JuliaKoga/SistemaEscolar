@@ -8,6 +8,69 @@ public class Endereco {
     private Estado estado;
     private String cidade;
 
+    private Endereco(String rua, String bairro, int numero, String complemento, String cep, Estado estado, String cidade) {
+        this.rua = rua;
+        this.bairro = bairro;
+        this.numero = numero;
+        this.complemento = complemento;
+        this.cep = cep;
+        this.estado = estado;
+        this.cidade = cidade;
+    }
+
+    public static class EnderecoBuilder {
+        private String rua;
+        private String bairro;
+        private int numero;
+        private String complemento;
+        private String cep;
+        private Estado estado;
+        private String cidade;
+
+        public EnderecoBuilder() {
+        }
+
+        public EnderecoBuilder rua(String rua) {
+            this.rua = rua;
+            return this;
+        }
+
+        public EnderecoBuilder bairro(String bairro) {
+            this.bairro = bairro;
+            return this;
+        }
+
+        public EnderecoBuilder numero(int numero) {
+            this.numero = numero;
+            return this;
+        }
+
+        public EnderecoBuilder complemento(String complemento) {
+            this.complemento = complemento;
+            return this;
+        }
+
+        public EnderecoBuilder cep(String cep) {
+            this.cep = cep;
+            return this;
+        }
+
+        public EnderecoBuilder estado(Estado estado) {
+            this.estado = estado;
+            return this;
+        }
+
+        public EnderecoBuilder cidade(String cidade) {
+            this.cidade = cidade;
+            return this;
+        }
+
+        public Endereco criarEndereco() {
+            return new Endereco(rua, bairro, numero, complemento, cep, estado, cidade);
+        }
+
+    }
+
     public String getRua() {
         return rua;
     }
@@ -64,15 +127,7 @@ public class Endereco {
         this.cidade = cidade;
     }
 
-    public Endereco(String rua, String bairro, int numero, String complemento, String cep, Estado estado, String cidade) {
-        this.rua = rua;
-        this.bairro = bairro;
-        this.numero = numero;
-        this.complemento = complemento;
-        this.cep = cep;
-        this.estado = estado;
-        this.cidade = cidade;
-    }
+
 
     @Override
     public String toString() {
