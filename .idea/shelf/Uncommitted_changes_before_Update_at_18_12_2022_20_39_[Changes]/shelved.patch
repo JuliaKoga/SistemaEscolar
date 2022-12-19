@@ -1,0 +1,33 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -51,7 +51,7 @@
+       <workItem from="1670025419193" duration="710000" />
+       <workItem from="1670174281415" duration="969000" />
+       <workItem from="1670628167561" duration="203000" />
+-      <workItem from="1671143370952" duration="332000" />
++      <workItem from="1671143370952" duration="458000" />
+     </task>
+     <task id="LOCAL-00001" summary="first commit">
+       <created>1668884813810</created>
+@@ -81,7 +81,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1671143599744</updated>
+     </task>
+-    <option name="localTasksCounter" value="5" />
++    <task id="LOCAL-00005" summary="adicionando outra list para materia">
++      <created>1671143709835</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1671143709835</updated>
++    </task>
++    <option name="localTasksCounter" value="6" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
